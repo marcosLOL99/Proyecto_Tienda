@@ -1,0 +1,76 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "titulo": "Camiseta Básica Gris",
+      "descripcion": "Camiseta de algodón suave, ideal para un look casual diario.",
+      "precio": 14.99,
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "marca": "Zara",
+      "categoria": "camisetas",
+      "imagen": "./src/assets/img/camiseta-basica-gris.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Camiseta Básica Negra",
+      "descripcion": "Camiseta de algodón suave, ideal para un look casual diario.",
+      "precio": 14.95,
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "marca": "Zara",
+      "categoria": "camisetas",
+      "imagen": "./src/assets/img/camiseta-basica-negra.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Pantalón Straight Fit Hombre",
+      "descripcion": "Pantalón straight fit confeccionado en tejido de algodón. Bolsillos frontales y detalle de bolsillos traseros de solapa con botón.",
+      "precio": 39.99,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "marca": "Zara",
+      "categoria": "pantalones",
+      "imagen": "./src/assets/img/pantalon-straight.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Pantalón Relaxed Fit Hombre",
+      "descripcion": "Pantalón relaxed fit confeccionado en tejido de algodón. Cinco bolsillos. Aplicación de tira multifunción en perneras. ",
+      "precio": 39.95,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "marca": "Zara",
+      "categoria": "pantalones",
+      "imagen": "./src/assets/img/pantalon-relaxed-fit.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Sudadera con Capucha",
+      "descripcion": "Sudadera unisex con capucha al estilo streetwear.",
+      "precio": 29.99,
+      "discountPercentage": 10.58,
+      "rating": 4.09,
+      "stock": 32,
+      "marca": "Zara",
+      "categoria": "sudaderas",
+      "imagen": "./src/assets/img/sudadera-capucha.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Sudadera sin Capucha",
+      "descripcion": "Sudadera unisex sin capucha, ideal para el entretiempo.",
+      "precio": 29.95,
+      "discountPercentage": 10.58,
+      "rating": 4.09,
+      "stock": 32,
+      "marca": "Zara",
+      "categoria": "sudaderas",
+      "imagen": "./src/assets/img/sudadera-sin-capucha.jpg"
+    }
+  ]
+}
