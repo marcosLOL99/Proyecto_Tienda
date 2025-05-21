@@ -3,24 +3,13 @@ import { productos } from './bbdd/productos.json'
 import { BarraLateral } from './Componentes/BarraLateral.jsx'
 import { Header } from './Componentes/Header.jsx'
 import './App.css'
-import { useContext, useState } from 'react'
-import { FiltroContexto } from './contexto/filtros.jsx'
+import { usoDeFiltros } from './Funciones/usoDeFiltros.js'
+import { Carrito } from './Componentes/Carrito.jsx'
+//import { useState } from 'react'
 
-function usoDeFiltros() {
-  const {filtro, setFiltro} = useContext(FiltroContexto)
-
-  const filtrarProductos = (productos) => {
-    return productos.filter(producto => {
-      const cumpleCategoria = filtro.categoria === 'all' || producto.categoria === filtro.categoria
-      const cumplePrecio = producto.precio <= filtro.precio
-      return cumpleCategoria && cumplePrecio
-    })
-  }
-  return { filtrarProductos, setFiltro }
-}
 
 function App() {
-  const { filtrarProductos, setFiltro } = usoDeFiltros()
+  const { filtrarProductos} = usoDeFiltros()
   const productosFiltrados = filtrarProductos(productos)
 
   return (
@@ -28,7 +17,7 @@ function App() {
       <Header />
       <br />
       <main className='main-layout'>
-        <BarraLateral cambiarFiltro={setFiltro} />
+        <BarraLateral />
         <Productos productos={productosFiltrados}/>
       </main>
     </>

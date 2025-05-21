@@ -1,3 +1,4 @@
+import { Carrito } from "./Carrito";
 import "./Header.css";
 import { CartIcon, UserIcon } from './Icons';
 
@@ -13,7 +14,7 @@ export function Header() {
             <div className="header-title">Tienda de Ropa</div>
 
             <div className="header-icons">
-                <CartIcon/>
+                <Carrito/>
                 <UserIcon/>
             </div>
         </header>

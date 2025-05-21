@@ -1,19 +1,19 @@
+import { usoDeFiltros } from "../Funciones/usoDeFiltros";
 import "./Filtros.css";
 import { useState } from "react";
 
-export function Filtros({cambiarFiltro}) {
-    const [minPrecio, setMinPrecio] = useState(50)
+export function Filtros() {
+    const { filtro, setFiltro } = usoDeFiltros()
 
-    const handleChangeMinPrecio = (event) => {
-        setMinPrecio(event.target.value)
-        cambiarFiltro((prevFiltro) => ({
+    const handleChangePrecio = (event) => {
+        setFiltro((prevFiltro) => ({
             ...prevFiltro,
             precio: event.target.value,
         }))
     }
 
     const handleChangeCategoria = (event) => {
-        cambiarFiltro((prevFiltro) => ({
+        setFiltro((prevFiltro) => ({
             ...prevFiltro,
             categoria: event.target.value
         }))
@@ -23,8 +23,8 @@ export function Filtros({cambiarFiltro}) {
         <div className="filtros">
             <div>
                 <label htmlFor="precio">Precio:</label>
-                <input type="range" id="precio" name="precio" min="0" max="100" onChange={handleChangeMinPrecio}/>
-                <span>{minPrecio}€</span>
+                <input type="range" id="precio" name="precio" min="0" max="100" value={filtro.precio} onChange={handleChangePrecio}/>
+                <span>{filtro.precio}€</span>
             </div>
             <div>
                 <label htmlFor="categoria">Categoria:</label>
